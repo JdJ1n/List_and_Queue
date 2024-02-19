@@ -1,4 +1,4 @@
-package LinkedList;
+package GameSolver;
 
 public class LinkedList {
     private Node head;

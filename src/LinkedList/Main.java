@@ -4,8 +4,10 @@ public class Main {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.addFirst(10);
-        list.addLast(20);
         list.addLast(30);
+        list.addLast(20);
+        list.addLast(40);
+        list.addLast(50);
         System.out.println("Size: " + list.size());
         System.out.println("First: " + list.first());
         System.out.println("Last: " + list.last());
@@ -13,9 +15,9 @@ public class Main {
         System.out.println("First after removeFirst: " + list.first());
         list.removeLast();
         System.out.println("Last after removeLast: " + list.last());
-        list.addLast(40);
-        list.addLast(50);
-        list.removeValue(40);
+        list.addLast(80);
+        list.addLast(90);
+        list.removeValue(80);
         System.out.println("Is 40 in the list? " + list.checkInList(40));
         System.out.println("3rd last element: " + list.returnNLast(3));
         System.out.println("Max value in the list: " + list.maxValue());

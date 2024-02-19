@@ -9,6 +9,7 @@ public class Main {
         queue.enqueue(30);
         queue.enqueue(40);
         queue.enqueue(50);
+        System.out.println("Size:" + queue.size());
         System.out.println("Queue after enqueuing 10, 20, 30, 40, 50:");
         queue.print();
         System.out.println("Dequeue: " + queue.dequeue());
