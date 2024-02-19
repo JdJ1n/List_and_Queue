@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d618930-4462-49f3-ba88-b0c06b8092bc" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/GameSolver/GameSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameSolver/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameSolver/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameSolver/ReadMatrixFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSolver/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularQueue/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularQueue/CircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularQueue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularQueue/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SurvivalGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSolver/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSolver/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSolver/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CircularQueue.Main.executor": "Run",
-    "Application.GameSolver.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.ReadMatrixFromFile.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/fr.dic",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CircularQueue.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GameSolver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadMatrixFromFile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/fr.dic&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Cours\2024.1 Hi\IFT2015\TP2IFT2015\tp2_ift2015\src\GameSolver" />
@@ -139,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708292837568</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <option name="closed" value="true" />
+      <created>1708312246699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708312246699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
