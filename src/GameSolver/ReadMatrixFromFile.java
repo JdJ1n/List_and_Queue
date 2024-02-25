@@ -1,3 +1,5 @@
+//IFT2015_TP2
+//Jiadong Jin 20150692
 package GameSolver;
 
 import java.io.File;
@@ -34,7 +36,6 @@ public class ReadMatrixFromFile {
             }
         }
         scanner.close();
-
         return matrices;
     }
 }

@@ -1,5 +1,6 @@
+//IFT2015_TP2
+//Jiadong Jin 20150692
 package CircularQueue;
-
 
 public class CircularQueue {
     private final int[] queue; // Le tableau pour stocker les éléments de la file d'attente

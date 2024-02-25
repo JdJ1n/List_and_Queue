@@ -1,3 +1,5 @@
+//IFT2015_TP2
+//Jiadong Jin 20150692
 package GameSolver;
 
 public class Queue<T> {

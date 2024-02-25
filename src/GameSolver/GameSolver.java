@@ -1,3 +1,5 @@
+//IFT2015_TP2
+//Jiadong Jin 20150692
 package GameSolver;
 
 import java.io.FileNotFoundException;
@@ -8,11 +10,15 @@ public class GameSolver {
 
     public static void main(String[] args) throws FileNotFoundException {
         String filePath = "src/GameSolver/sample.txt";
+        // Lire les matrices à partir du fichier
         int[][][] matrices = ReadMatrixFromFile.readMatricesFromFile(filePath);
 
+        // Parcourir toutes les matrices
         for (int[][] matrix : matrices) {
             if (matrix != null) {
+                // Résoudre le jeu pour chaque matrice
                 System.out.println(solve(matrix));
+                System.out.println();
             }
         }
     }
@@ -20,36 +26,39 @@ public class GameSolver {
     private static int solve(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
-        Queue<int[]> queue = new Queue<int[]>();
+        Queue<int[]> zombies = new Queue<int[]>();
 
-        // Initialize the queue with the positions of all zombies.
+        // Initialiser la file d'attente avec les positions de tous les zombies
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (matrix[i][j] == 2) {
-                    queue.enqueue(new int[]{i, j});
+                    zombies.enqueue(new int[]{i, j});
                 }
             }
         }
 
-        // Perform BFS from each zombie's position.
-        int iterations = 0;
-        while (!queue.isEmpty()) {
-            iterations++;
-            int size = queue.size();
+        // Effectuer une recherche en largeur à partir de la position de chaque zombie
+        int iteration = 0;
+        while (!zombies.isEmpty()) {
+            // Afficher la matrice après chaque itération
+            display(matrix);
+            iteration++;
+            int size = zombies.size();
             for (int i = 0; i < size; i++) {
-                int[] point = queue.dequeue();
+                int[] point = zombies.dequeue();
                 for (int j = 0; j < 4; j++) {
-                    int newX = point[0] + dx[j];
-                    int newY = point[1] + dy[j];
-                    if (newX >= 0 && newX < n && newY >= 0 && newY < m && matrix[newX][newY] == 1) {
-                        matrix[newX][newY] = 2;
-                        queue.enqueue(new int[]{newX, newY});
+                    int new_x = point[0] + dx[j];
+                    int new_y = point[1] + dy[j];
+                    // Si la nouvelle position est valide et contient un humain, convertir l'humain en zombie
+                    if (new_x >= 0 && new_x < n && new_y >= 0 && new_y < m && matrix[new_x][new_y] == 1) {
+                        matrix[new_x][new_y] = 2;
+                        zombies.enqueue(new int[]{new_x, new_y});
                     }
                 }
             }
         }
 
-        // Check if there are any humans left.
+        // Vérifier s'il reste des humains
         for (int[] row : matrix) {
             for (int num : row) {
                 if (num == 1) {
@@ -58,6 +67,18 @@ public class GameSolver {
             }
         }
 
-        return iterations;
+        // Retourner le nombre d'itérations nécessaires pour convertir tous les humains en zombies
+        return iteration;
+    }
+
+    private static void display(int[][] matrix) {
+        // Afficher la matrice
+        for (int[] row : matrix) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 }
